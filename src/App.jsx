@@ -2,7 +2,18 @@ import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import Clock from "./Clock";
+import Toggle from "./Toggle";
+import NameForm from "./NameForm";
+import FilterableProductTable from "./FilterableProductTable";
+import Error from "./Error";
+import Fragment from "./Fragment";
 
+
+import CompA from "./components/CompA";
+import { Counter } from "./components/Counter";
+import CounterContextProvider from "./contexts/CounterContext";
+import NameContextProvider from "./contexts/NameContext";
 
 
 function formatName(user) {
@@ -45,14 +56,77 @@ function tick() {
 }
 
 
-function App() {
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
 
-          setInterval(tick, 1000);
+class WelcomeOne extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+
+function App() {
+        //   setInterval(tick, 1000);
+    const numbers = [1, 2, 3, 4, 5];
+    const listItems = numbers.map((number) =>
+    <li>{number}</li>
+    );
+
+    const PRODUCTS = [
+  {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+];
+
   return (
       <div className="App">
-          {element1}
-          {getGreeting()}
-      {element}
+
+        <div className="App">
+            <h1>Context API</h1>
+            <CounterContextProvider>
+                <Counter />
+                <NameContextProvider>
+                    <CompA />
+                </NameContextProvider>
+            </CounterContextProvider>
+        </div>
+          
+
+          {/* <Error /> */}
+          {/* <Fragment /> */}
+
+          {/* <FilterableProductTable products={PRODUCTS} /> */}
+
+          {/* <NameForm />
+        
+
+          <ul>
+              {listItems}
+          </ul>
+
+          Example 2
+      
+          <ul>
+               {numbers.map((number) =>
+                  <li>{number}</li>
+                )}
+        </ul> */}
+
+          {/* <Welcome name="Sara" />
+          <Welcome name="Cahal" />
+          <Welcome name="Edite" />
+          <WelcomeOne name="Edite One" /> */}
+          {/* <Clock />
+          <Toggle /> */}
+          
+          {/* {element1} */}
+          {/* {getGreeting()} */}
+          {/* {element} */}
     </div>
   );
 }
