@@ -10,6 +10,8 @@ import Error from "./Error";
 import Fragment from "./Fragment";
 import Hooks from "./Hooks";
 import Modal from "./Portal";
+import Bootstrap from "./Bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import CompA from "./components/CompA";
@@ -88,9 +90,10 @@ function App() {
   return (
       <div className="App">
 
-       
-            <h1>Portal API</h1>
-          <Modal />
+       <Bootstrap />
+          
+          {/*    <h1>Portal API</h1>
+          <Modal />*/}
           
 
             <h1>Context API</h1>
