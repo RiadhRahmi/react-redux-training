@@ -8,6 +8,8 @@ import NameForm from "./NameForm";
 import FilterableProductTable from "./FilterableProductTable";
 import Error from "./Error";
 import Fragment from "./Fragment";
+import Hooks from "./Hooks";
+import Modal from "./Portal";
 
 
 import CompA from "./components/CompA";
@@ -86,15 +88,22 @@ function App() {
   return (
       <div className="App">
 
-        <div className="App">
+       
+            <h1>Portal API</h1>
+          <Modal />
+          
+
             <h1>Context API</h1>
+           <Hooks />
+          
+        {/*  <h1>Context API</h1>
             <CounterContextProvider>
                 <Counter />
                 <NameContextProvider>
                     <CompA />
                 </NameContextProvider>
-            </CounterContextProvider>
-        </div>
+            </CounterContextProvider> */}
+       
           
 
           {/* <Error /> */}
