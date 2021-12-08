@@ -11,6 +11,7 @@ import Fragment from "./Fragment";
 import Hooks from "./Hooks";
 import Modal from "./Portal";
 import Bootstrap from "./Bootstrap";
+import Todos from "./Todos";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -90,16 +91,18 @@ function App() {
   return (
       <div className="App">
 
-       <Bootstrap />
+          <Todos />
+
+       {/* <Bootstrap />
           
-          {/*    <h1>Portal API</h1>
-          <Modal />*/}
+             <h1>Portal API</h1>
+          <Modal />
           
 
             <h1>Context API</h1>
            <Hooks />
           
-        {/*  <h1>Context API</h1>
+          <h1>Context API</h1>
             <CounterContextProvider>
                 <Counter />
                 <NameContextProvider>
