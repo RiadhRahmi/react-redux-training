@@ -30,3 +30,4 @@ https://reactgo.com/redux-hooks-fetch-data/
 https://egghead.io/lessons/react-exploring-our-currency-exchange-application
 https://github.com/kritebh/ecommerce-django-react/tree/main/frontend
 https://medium.com/how-to-react/how-to-use-redux-in-your-react-app-with-axios-2327f581bf8a
+https://jasonwatmore.com/post/2020/03/02/react-hooks-redux-user-registration-and-login-tutorial-example
