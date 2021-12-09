@@ -12,6 +12,10 @@ import Hooks from "./Hooks";
 import Modal from "./Portal";
 import Bootstrap from "./Bootstrap";
 import Todos from "./Todos";
+import CounterRedux from "./redux/Counter";
+import CounterTwoRedux from "./redux/CounterTwo";
+import UserListScreen from "./screens/UserListScreen";
+import PostListScreen from "./screens/PostListScreen";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -91,9 +95,18 @@ function App() {
   return (
       <div className="App">
 
-          <Todos />
+          <h2>Example how to use redux</h2>
+          <UserListScreen />
+          <PostListScreen />
+        
+        {/*
+          <CounterRedux />
+          <CounterTwoRedux />
+         
+          
+           <Todos />
 
-       {/* <Bootstrap />
+        <Bootstrap />
           
              <h1>Portal API</h1>
           <Modal />

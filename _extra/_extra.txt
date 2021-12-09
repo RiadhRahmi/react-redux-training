@@ -16,3 +16,17 @@ JavaScript can create new HTML events in the page
 
 https://www.w3schools.com/react/default.asp
 https://www.digitalocean.com/community/tutorials/how-to-build-a-react-to-do-app-with-react-hooks
+https://react-redux.js.org/
+https://react-redux.js.org/tutorials/quick-start
+https://github.com/chrisblakely01/react-redux-todo-app
+
+
+// use redux in large projects
+https://hackmamba.io/blog/2020/12/setup-redux-for-large-react-projects-without-tears/
+https://medium.com/@td0m/complete-guide-to-structuring-large-react-redux-apps-bc91e2136d4c
+https://egghead.io/lessons/react-introducing-redux-with-react-hooks
+https://medium.com/weekly-webtips/2020-redux-tutorial-with-hooks-and-thunk-8a6a4be6f9de
+https://reactgo.com/redux-hooks-fetch-data/
+https://egghead.io/lessons/react-exploring-our-currency-exchange-application
+https://github.com/kritebh/ecommerce-django-react/tree/main/frontend
+https://medium.com/how-to-react/how-to-use-redux-in-your-react-app-with-axios-2327f581bf8a
